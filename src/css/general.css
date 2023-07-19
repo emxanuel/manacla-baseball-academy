@@ -1,0 +1,10 @@
+:root{
+    --blue: #004aad;
+    --dark-gray: #545454;
+    --light-gray: #d9d9d9
+}
+
+*{
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}

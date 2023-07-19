@@ -1,0 +1,42 @@
+.container{
+    background-color: #004aad;
+    display: flex;
+    justify-content: space-around;
+    height: 4rem;
+    align-items: center;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.links a{
+    text-decoration: none;
+}
+
+.links p, .links a{
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;   
+    transition-duration: 300ms;
+    color: #d9d9d9;
+}
+
+.links p:hover, .links a:hover{
+    color: #111;
+    scale: 1.1;
+    transition-duration: 300ms;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.menu p{
+    z-index: 10;
+}
