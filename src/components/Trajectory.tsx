@@ -1,6 +1,8 @@
 const Trajectory = () => {
     return (
-        <div>Trayectoria</div>
+        <div>
+            <h1>Trayectoria</h1>
+        </div>
     )
 }
 

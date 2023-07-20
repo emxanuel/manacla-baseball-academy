@@ -1,0 +1,60 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container a{
+    text-decoration: none;
+    border-radius: 0.2rem;
+    color: white;
+    padding: 1rem;
+    width: 8rem;
+    height: 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.gmailButton{
+    background-color: red;
+}
+
+.gmailButton img{
+    width: 1.4rem;
+}
+
+.wsButton{
+    background-color: #25D366;
+}
+
+.wsButton i{
+    font-size: 1.4rem;
+}
+
+.container textarea{
+    resize: none;
+    width: 20rem;
+    aspect-ratio: 16/9;
+    margin-bottom: 2rem;
+}
+
+.buttonsContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}

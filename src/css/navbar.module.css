@@ -1,15 +1,17 @@
 .container{
     background-color: #004aad;
     display: flex;
-    justify-content: space-around;
     height: 4rem;
+    justify-content: space-around;
     align-items: center;
 }
 
 .links{
     display: flex;
     flex-direction: row;
+    height: 100%;
     gap: 2rem;
+    align-items: center;
 }
 
 .links a{
@@ -22,12 +24,34 @@
     font-weight: 600;   
     transition-duration: 300ms;
     color: #d9d9d9;
+    margin: 0px;
 }
 
 .links p:hover, .links a:hover{
     color: #111;
-    scale: 1.1;
     transition-duration: 300ms;
+    animation: bordered;
+    animation-duration: 700ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bordered {
+    0%{
+        border: none;
+    }
+    50%{
+        border: 1px solid #d9d9d9;
+    }
+    75%{
+        transform: skew(10deg);
+        rotate: -1deg;
+    }
+    100%{
+        padding: 0.7rem;
+        background-color: #d9d9d9;
+        transform: skew(10deg);
+        rotate: -1deg;
+    }
 }
 
 .menu{

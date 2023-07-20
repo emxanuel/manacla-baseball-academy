@@ -8,7 +8,6 @@ const Navbar = () => {
     return (
         <nav className={styles.container}>
             <div>
-
             </div>
             <div className={styles.links}>
                 <Link to='/'>Inicio</Link>

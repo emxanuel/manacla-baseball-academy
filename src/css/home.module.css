@@ -3,9 +3,9 @@
     color: white;
 }
 
-.header h1, .header h2{
+/* .header h1, .header h2{
     filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.363));
-}
+} */
 
 .header h1{
     font-size: 2.5rem;
@@ -42,14 +42,15 @@
 .secondSection h3{
     text-align: center;
     font-size: 3rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.322);
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.322); */
 }
 
 .animatedChild{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 0px 1rem 10px rgba(0, 0, 0, 0.301);
+    /* box-shadow: 0px 1rem 10px rgba(0, 0, 0, 0.301); */
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.322); */
     padding: 1rem;
 }
 
@@ -57,20 +58,36 @@
     width: 35rem;
     text-align: justify;
     font-weight: 600;
+    border-image: linear-gradient(90deg, rgba(0,74,173,1) 0%, rgba(84,84,84,1) 70%, rgba(217,217,217,1) 100%) 1;
+    border-width: 4px;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 15rem;
+    padding: 1rem 15rem 1rem 0rem;
 }
-
 
 .rowReverse{
     flex-direction: row-reverse;
 }
 
-.animatedChild img, .animatedChildiframe{
-    width: 15rem;
-    box-shadow: 0px 0px 10px black;
+.rowReverse p{
+    padding-left: 15rem;
+    padding-right: 0rem;
+    border-image: linear-gradient(270deg, rgba(0,74,173,1) 0%, rgba(84,84,84,1) 70%, rgba(217,217,217,1) 100%) 1;
 }
 
-.animatedChild iframe{
-    border: none;
+.animatedChild img, .animatedChild iframe{
+    width: 15rem;
+    /* box-shadow: 0px 0px 10px black; */
+}
+
+.informationPin{
+    font-size: 10rem;
+    color: red;
+    padding-left: 7rem;
 }
 
 .name{

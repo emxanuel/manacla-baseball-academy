@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
+import Footer from './Footer'
 interface props{
     Comp: React.ComponentType
 }
@@ -9,6 +10,7 @@ const Layout: React.FC<props> = ({ Comp }) => {
         <div>
             <Navbar />
             <Comp />
+            <Footer />
         </div>
     )
 }

@@ -1,3 +1,4 @@
+
 const toggleShowElement = (element: HTMLElement, styles: CSSModuleClasses) => {
     element.classList.remove(styles.notShow)
     if (!element.classList.toggle(styles.hidden)){
@@ -17,23 +18,14 @@ const toggleShowElement = (element: HTMLElement, styles: CSSModuleClasses) => {
     // }
 };
 
-const isVisible = (element: Element) => {
-    const rect = element.getBoundingClientRect();
-    const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
-
-    return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+const selectedPage = () => {
+    setTimeout(() => {
+        const anchor = document.querySelector(`li > a[href='${window.location.pathname}']`) as HTMLElement
+        console.log(anchor)
+        anchor.style.fontWeight = '800';
+    }, 1000)
 }
 
-window.addEventListener('DOMContentLoaded', () => {
-    window.addEventListener('scroll', () => {
-        document.querySelectorAll('.paused').forEach(element => {
-            if (isVisible(element)){
-                element.classList.remove('paused')
-            }
-        })
-    })
-})
+window.addEventListener('load', () => selectedPage())
 
-scroll
-
-export { toggleShowElement };
+export { toggleShowElement, selectedPage };
