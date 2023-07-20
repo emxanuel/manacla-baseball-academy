@@ -21,7 +21,10 @@ const toggleShowElement = (element: HTMLElement, styles: CSSModuleClasses) => {
 const selectedPage = () => {
     const anchor = document.querySelector(`li > a[href='${window.location.pathname}']`) as HTMLElement
     if (anchor === null){
-        selectedPage()
+        setTimeout(() => {
+            selectedPage()
+        }, 500);
+        
     }
     else{
         anchor.style.fontWeight = '800';
