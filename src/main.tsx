@@ -9,14 +9,14 @@ import Contact from './components/Contact'
 import About from './components/About'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' Component={() => <Layout Comp={Home}/>} />
-        <Route path='/trajectory' Component={() => <Layout Comp={Trajectory}/>} />
-        <Route path='/contact' Component={() => <Layout Comp={Contact}/>} />
-        <Route path='/about' Component={() => <Layout Comp={About}/>} />
-      </Routes>
-    </BrowserRouter>
-  </React.StrictMode>,
+	<React.StrictMode>
+		<BrowserRouter>
+			<Routes>
+				<Route path='/' Component={() => <Layout Comp={Home} />} />
+				<Route path='/trajectory' Component={() => <Layout Comp={Trajectory} />} />
+				<Route path='/contact' Component={() => <Layout Comp={Contact} />} />
+				<Route path='/about' Component={() => <Layout Comp={About} />} />
+			</Routes>
+		</BrowserRouter>
+	</React.StrictMode>,
 )

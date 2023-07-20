@@ -19,11 +19,14 @@ const toggleShowElement = (element: HTMLElement, styles: CSSModuleClasses) => {
 };
 
 const selectedPage = () => {
-    setTimeout(() => {
-        const anchor = document.querySelector(`li > a[href='${window.location.pathname}']`) as HTMLElement
-        console.log(anchor)
+    const anchor = document.querySelector(`li > a[href='${window.location.pathname}']`) as HTMLElement
+    if (anchor === null){
+        selectedPage()
+    }
+    else{
         anchor.style.fontWeight = '800';
-    }, 1000)
+    }
+
 }
 
 window.addEventListener('load', () => selectedPage())

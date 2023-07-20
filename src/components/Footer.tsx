@@ -1,8 +1,9 @@
 import { Fade, JackInTheBox } from 'react-awesome-reveal'
 import styles from '../css/footer.module.css'
 import { selectedPage } from '../functions/elements'
+import { useEffect } from 'react'
 const Footer = () => {
-    selectedPage()
+    useEffect(selectedPage, [])
     return (
         <footer className={styles.container}>
             <div className={styles.contact}>
