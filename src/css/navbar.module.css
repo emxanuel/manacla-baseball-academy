@@ -4,6 +4,47 @@
     height: 4rem;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+    margin-top: -4rem;
+    width: 100%;
+    z-index: 1;
+}
+
+.name{
+    color: white;
+    font-size: larger;
+    padding: 1rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+.icon{
+    width: 1.4rem;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    user-select: none;
+    
+}
+
+.sticky{
+    position: fixed;
+    width: 100%;
+    animation: showNav;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes showNav {
+    from{
+        margin-top: -8rem;
+    }
+    to{
+        margin-top: -4rem;
+    }
 }
 
 .links{
@@ -12,6 +53,7 @@
     height: 100%;
     gap: 2rem;
     align-items: center;
+    position: relative;
 }
 
 .links a{

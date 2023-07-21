@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.information{
+    width: 50vw;
+    text-align: justify;
+    font-size: large;
+}
+
+.decoration{
+    width: 100%;
+    height: 15vw;
+    position: absolute;
+    background-color: #545454;
+    bottom: 10rem;
+    rotate: -4deg;
+    transform: skew(-4deg);
+    padding-left: 0.25rem;
+}

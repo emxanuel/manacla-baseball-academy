@@ -29,7 +29,7 @@
     height: 33.2rem;
     background-blend-mode: multiply;
     position: relative;
-    z-index: -2;
+    z-index: -20;
 }
 
 .secondSection{
