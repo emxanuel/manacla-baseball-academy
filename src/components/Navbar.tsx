@@ -2,14 +2,16 @@ import styles from '../css/navbar.module.css';
 import ElegibleMenu from './ElegibleMenu';
 import { scrollZero, toggleShowElement } from '../functions/elements';
 import elegibleMenuStyles from '../css/elegibleMenu.module.css'
+import navbarMenuStyles from '../css/navbarMenu.module.css'
 import { Link } from 'react-router-dom';
+import NavbarMenu from './NavbarMenu';
 
 const Navbar = () => {
     return (
         <div>
             <nav className={styles.container} id='navbar'>
                 <div className={styles.logo}>
-                    <img className={styles.icon}  src='https://upload.wikimedia.org/wikipedia/commons/9/92/Baseball.svg'/>
+                    <img className={styles.icon} src='https://upload.wikimedia.org/wikipedia/commons/9/92/Baseball.svg' />
                     <h1 className={styles.name}>RA Baseball Academy</h1>
                 </div>
                 <div className={styles.links}>
@@ -21,13 +23,20 @@ const Navbar = () => {
                             toggleShowElement(menu[0], elegibleMenuStyles);
                         }}
                         >Elegibles</p>
-                        
+
                         <ElegibleMenu />
                     </div>
-                    <Link to='/trajectory'onClick={scrollZero}>Trayectoria</Link>
+                    <Link to='/trajectory' onClick={scrollZero}>Trayectoria</Link>
                     <Link to='/contact' onClick={scrollZero}>Contacto</Link>
                 </div>
+                <div className={styles.menuButton}>
+                    <button className={styles.icon} onClick={() => {
+                        const menu = document.getElementsByClassName(navbarMenuStyles.container) as HTMLCollectionOf<HTMLElement>
+                        toggleShowElement(menu[0], navbarMenuStyles)
+                    }}><i className='fa-solid fa-bars' /></button>
+                </div>
             </nav>
+            <NavbarMenu />
         </div>
 
     )

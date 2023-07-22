@@ -11,7 +11,7 @@
     font-size: large;
 }
 
-.decoration{
+/* .decoration{
     width: 100%;
     height: 15vw;
     position: absolute;
@@ -20,4 +20,10 @@
     rotate: -4deg;
     transform: skew(-4deg);
     padding-left: 0.25rem;
+} */
+
+@media (max-width: 600px) {
+    .information{
+        width: 70vw;
+    }
 }

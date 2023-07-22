@@ -77,3 +77,16 @@
 .quickAccess ul{
     list-style: square;
 }
+
+@media (max-width: 600px) {
+    .container{
+        min-height: 80vh;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .content{
+        justify-content: center;
+        align-items: center;
+        font-size: large;
+    }
+}

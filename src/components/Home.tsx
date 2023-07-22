@@ -1,13 +1,17 @@
 import styles from '../css/home.module.css';
 import homePage1 from '../assets/images/home-page-1.jpg'
 import homePage2 from '../assets/images/home-page-2.jpg'
+import mainPhoto from '../assets/images/main-image.JPG'
 // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-var-requires, @typescript-eslint/no-unsafe-call
 import { Slide, Fade } from 'react-awesome-reveal';
 
 const Home = () => {
     return (
-        <div>
+        <div className={styles.container}>
             <section className={styles.mainMedia}>
+                <div className={styles.mainImageContainer}>
+                    <img src={mainPhoto} alt="" />
+                </div>
                 <div className={styles.header}>
                     <h1><span className={styles.name}>Richard Acevedo</span> Baseball Academy</h1>
                     <h2>Academia de las futuras estrellas del baseball</h2>
@@ -53,7 +57,7 @@ const Home = () => {
                             <p>Estamos ubicados en (Provincia), República Dominicana</p>
                         </Slide>
                         <Slide triggerOnce direction='right'>
-                            <i className={`${styles.informationPin} fa-solid fa-location-dot`} />
+                            <div className={styles.pinContainer}><i className={`${styles.informationPin} fa-solid fa-location-dot`} /></div>
                         </Slide>
                     </div>
                 {/* </Slide> */}

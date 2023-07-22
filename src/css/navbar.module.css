@@ -7,7 +7,7 @@
     position: relative;
     margin-top: -4rem;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
 }
 
 .name{
@@ -105,4 +105,34 @@
 
 .menu p{
     z-index: 10;
+}
+
+.menuButton{
+    display: none;
+}
+
+@media (max-width: 801px) {
+    .links{
+        display: none;
+    }
+
+    .menuButton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menuButton button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .menuButton i{
+        font-size: 1.5rem;
+        color: white;
+    }
 }

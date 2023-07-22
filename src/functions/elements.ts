@@ -1,13 +1,12 @@
-import navbarStyles from '../css/navbar.module.css'
+import navbarStyles from "../css/navbar.module.css";
 const toggleShowElement = (element: HTMLElement, styles: CSSModuleClasses) => {
-    element.classList.remove(styles.notShow)
-    if (!element.classList.toggle(styles.hidden)){
-        element.style.display = 'flex'
-    }
-    else{
+    element.classList.remove(styles.notShow);
+    if (!element.classList.toggle(styles.hidden)) {
+        element.style.display = "flex";
+    } else {
         setTimeout(() => {
-            element.style.display ='none'
-        }, 300)
+            element.style.display = "none";
+        }, 300);
     }
 
     // if (element.style.display === "flex"){
@@ -19,42 +18,42 @@ const toggleShowElement = (element: HTMLElement, styles: CSSModuleClasses) => {
 };
 
 const selectedPage = () => {
-    const anchor = document.querySelector(`li > a[href='${window.location.pathname}']`) as HTMLElement
-    if (anchor === null){
+    const anchor = document.querySelector(
+        `li > a[href='${window.location.pathname}']`
+    ) as HTMLElement;
+    if (anchor === null) {
         setTimeout(() => {
-            selectedPage()
+            selectedPage();
         }, 500);
-        
+    } else {
+        anchor.style.fontWeight = "800";
     }
-    else{
-        anchor.style.fontWeight = '800';
-    }
-}
+};
 
 const makeSticky = () => {
-    const navbar = document.querySelector('#navbar') as HTMLElement
-    if (navbar !== null){
-        if (window.scrollY > navbar.offsetTop + 60){
-            console.log('yes')
-            navbar.classList.add(navbarStyles.sticky)
-        }
-        else{
-            console.log('no')
-            navbar.classList.remove(navbarStyles.sticky)
+    const navbar = document.querySelector("#navbar") as HTMLElement;
+    if (navbar !== null) {
+        if (window.scrollY > navbar.offsetTop + 60) {
+            navbar.classList.add(navbarStyles.sticky);
+        } else {
+            navbar.classList.remove(navbarStyles.sticky);
         }
     }
-}
+};
 
 const scrollZero = () => {
     window.scroll({
         top: 0,
-        behavior: 'smooth'
-    })
-}
+        behavior: "smooth",
+    });
+};
 
-window.onscroll = makeSticky
+const hide = (element: HTMLElement, styles: CSSModuleClasses) => {
+    element.classList.add(styles.hidden);
+};
 
+window.onscroll = makeSticky;
 
-window.addEventListener('load', () => selectedPage())
+window.addEventListener("load", () => selectedPage());
 
-export { toggleShowElement, selectedPage, scrollZero };
+export { toggleShowElement, selectedPage, scrollZero, hide };
