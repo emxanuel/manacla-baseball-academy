@@ -1,5 +1,6 @@
 import navbarStyles from "../css/navbar.module.css";
-const toggleShowElement = (element: HTMLElement, styles: CSSModuleClasses) => {
+import navbarMenuStyles from '../css/navbarMenu.module.css'
+const   toggleShowElement = (element: HTMLElement, styles: CSSModuleClasses) => {
     element.classList.remove(styles.notShow);
     if (!element.classList.toggle(styles.hidden)) {
         element.style.display = "flex";
@@ -52,8 +53,13 @@ const hide = (element: HTMLElement, styles: CSSModuleClasses) => {
     element.classList.add(styles.hidden);
 };
 
+const ocultNavbarMenu = () => {
+    const element = document.getElementById(navbarMenuStyles.container) as HTMLElement;
+    hide(element, navbarMenuStyles)
+}
+
 window.onscroll = makeSticky;
 
 window.addEventListener("load", () => selectedPage());
 
-export { toggleShowElement, selectedPage, scrollZero, hide };
+export { toggleShowElement, selectedPage, scrollZero, hide, ocultNavbarMenu };

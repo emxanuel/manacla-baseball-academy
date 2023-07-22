@@ -152,9 +152,9 @@
         height: 100%;
     }
     .mainImageContainer img{
-        width: 300%;
+        width: 340%;
         height: calc(100% + 25vh);
-        transform: translate(-160vw, -25vh);
+        transform: translate(-175vw, -25vh);
     }
     .header{
         justify-content: center;

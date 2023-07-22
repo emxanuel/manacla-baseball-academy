@@ -11,9 +11,9 @@ const Footer = () => {
                 <Fade triggerOnce >
                     <div className={styles.content}>
                         <a href=""><i className={`fa-brands fa-whatsapp ${styles.whatsapp}`} />
-                        (809)-000-0000</a>
+                            (809)-000-0000</a>
                         <a href=""><i className={`fa-brands fa-instagram ${styles.instagram}`} />
-                        @rabaseball</a>
+                            @rabaseball</a>
                     </div>
                 </Fade>
             </div>
@@ -37,6 +37,9 @@ const Footer = () => {
                         </ul>
                     </div>
                 </Fade>
+            </div>
+            <div className={styles.credit}>
+                <a target='_blank' href="https://lordicon.com">Animated icons by Lordicon.com</a>
             </div>
         </footer>
     )

@@ -13,7 +13,7 @@ const Contact = () => {
                 </div>
                 <div className={styles.ourMedia}>
                     <h2>Nuestros medios</h2>
-                    <div>
+                    <div className={styles.mediaContainer}>
                         <ul className={styles.list}>
                             <li><span className={styles.listTitle}>Correo:</span> example@gmail.com</li>
                             <li><span className={styles.listTitle}>Teléfono:</span> (809)-000-0000</li>

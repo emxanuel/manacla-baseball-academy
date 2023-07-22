@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     gap: 5rem;
     border: 1px solid rgba(0, 0, 0, 0.342);
     padding: 2rem;
@@ -11,13 +11,13 @@
 .header{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    gap: 5rem;
+    justify-content: space-evenly;
+    width: inherit;
 }
 
 .imgContainer{
-    width: 10rem;
-    height: 10rem;
+    max-width: 10rem;
+    aspect-ratio: 1/1;
     border-radius: 100%;
     display: flex;
     align-items: center;
@@ -27,7 +27,7 @@
 
 .video{
     width: 40rem;
-    height: 60vh;
+    aspect-ratio: 16/9;
     border: 1px solid black;
     display: flex;
     justify-content: center;
@@ -48,6 +48,7 @@
     justify-content: center;
     align-items: center;
     word-wrap: break-word;
+    width: 40vw;
 }
 
 .description{
@@ -55,5 +56,31 @@
     text-align: right;
     font-size: large;
     word-wrap: break-word;
-    width: 35rem;
+    max-width: 35rem;
+}
+
+@media (max-width: 600px) {
+    .container{
+        flex-direction: column;
+    }
+    .secondDiv{
+        width: 100%;
+    }
+    .header{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .description{
+        text-align: center;
+    }
+    .video{
+        width: auto;
+    }
+    .header h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 10rem;
+    }
 }

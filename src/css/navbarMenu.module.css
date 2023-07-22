@@ -3,7 +3,6 @@
     display: flex;
     position: fixed;
     flex-direction: column;
-    width: 100%;
     z-index: 1;
     justify-content: center;
     align-items: center;
@@ -11,6 +10,14 @@
     animation: init;
     animation-duration: 300ms;
     animation-fill-mode: forwards;
+    margin-left: 62.4vw;
+    padding: 1vw;
+}
+
+.container button{
+    border: none;
+    background: none;
+    font-size: large;
 }
 
 @keyframes init {
@@ -25,6 +32,7 @@
 .links{
     color: white;
     text-decoration: none;
+    font-size: large;
 }
 
 .hidden{
