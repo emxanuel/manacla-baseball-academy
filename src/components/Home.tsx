@@ -13,7 +13,7 @@ const Home = () => {
                     <img src={mainPhoto} alt="" />
                 </div>
                 <div className={styles.header}>
-                    <h1><span className={styles.name}>Richard Acevedo</span> Baseball Academy</h1>
+                    <h1><span className={styles.name}>MANACLA</span> BASEBALL ACADEMY</h1>
                     <h2>Academia de las futuras estrellas del baseball</h2>
                 </div>
             </section>
