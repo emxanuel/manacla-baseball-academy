@@ -12,8 +12,8 @@ const Footer = () => {
                     <div className={styles.content}>
                         <a href=""><i className={`fa-brands fa-whatsapp ${styles.whatsapp}`} />
                             (809)-000-0000</a>
-                        <a href=""><i className={`fa-brands fa-instagram ${styles.instagram}`} />
-                            @rabaseball</a>
+                        <a href="https://instagram.com/manaclabaseballacademy" target='_blank'><i className={`fa-brands fa-instagram ${styles.instagram}`} />
+                            @manaclabaseballacademy</a>
                     </div>
                 </Fade>
             </div>

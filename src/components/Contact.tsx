@@ -21,7 +21,7 @@ const Contact = () => {
                                 <span className={styles.listTitle}>Redes Sociales:</span>
                                 <ul className={styles.socialMedia}>
                                     <li>
-                                        <a href=""><i className={`fa-brands fa-instagram ${styles.instagram}`} /> @rabaseball</a>
+                                        <a href="https://instagram.com/manaclabaseballacademy" target='_blank'><i className={`fa-brands fa-instagram ${styles.instagram}`} /> @manaclabaseballacademy</a>
                                     </li>
                                 </ul>
                             </li>
