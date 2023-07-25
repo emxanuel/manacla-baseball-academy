@@ -12,7 +12,7 @@ const Navbar = () => {
             <nav className={styles.container} id='navbar'>
                 <div className={styles.logo}>
                     <img className={styles.icon} src='/src/assets/images/logo.png' />
-                    <h1 className={styles.name}>MANACLA Baseball Academy</h1>
+                    <h1 className={styles.name}>MANACLA Baseball</h1>
                 </div>
                 <div className={styles.links}>
                     <Link to='/' onClick={scrollZero}>Inicio</Link>
