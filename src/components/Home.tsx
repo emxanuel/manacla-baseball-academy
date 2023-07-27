@@ -1,6 +1,6 @@
 import styles from '../css/home.module.css';
 import mainImage from '../assets/images/main-image.jpg'
-import homePage3 from '../assets/images/PORTADA.png'
+import homePage3 from '../assets/images/PORTADA.svg'
 // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-var-requires, @typescript-eslint/no-unsafe-call
 
 const Home = () => {

@@ -2,6 +2,8 @@ import { Fade, JackInTheBox } from 'react-awesome-reveal'
 import styles from '../css/footer.module.css'
 import { selectedPage } from '../functions/elements'
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
+
 const Footer = () => {
     useEffect(selectedPage)
     return (
@@ -30,10 +32,10 @@ const Footer = () => {
                 <Fade triggerOnce >
                     <div className={styles.content}>
                         <ul>
-                            <li><a href="/">Inicio</a></li>
-                            <li><a href="/about">Quienes Somos</a></li>
-                            <li><a href="/trajectory">Trayectoria</a></li>
-                            <li><a href="/contact">Contacto</a></li>
+                            <li><Link to="/">Inicio</Link></li>
+                            <li><Link to="/about">Quienes Somos</Link></li>
+                            <li><Link to="/trajectory">Trayectoria</Link></li>
+                            <li><Link to="/contact">Contacto</Link></li>
                         </ul>
                     </div>
                 </Fade>
