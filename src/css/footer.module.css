@@ -46,7 +46,7 @@
 
 .content a:hover{
     color: #111b29;
-    scale: 1.2;
+    scale: 1.05;
     transition-duration: 300ms;
 }
 
@@ -62,33 +62,8 @@
     gap: 0.5rem;
 }
 
-.whatsapp{
-    color: #25D366;
-}
-
-.instagram{
-    color: #2c66b1;
-}
-
-.pin{
-    color: #f00;
-}
-
 .quickAccess ul{
     list-style: square;
-}
-
-.credit{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 0;
-    width: 100%;
-}
-
-.credit a{
-    color: #111b29;
 }
 
 @media (max-width: 600px) {

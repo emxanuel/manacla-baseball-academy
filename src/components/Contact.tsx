@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import styles from '../css/contact.module.css'
-import animatedIcon from '../assets/images/wired-lineal-981-consultation.webp'
 
 const Contact = () => {
     const [message, setMessage] = useState('');
@@ -8,20 +7,19 @@ const Contact = () => {
         <div className={styles.container}>
             <h1>Contacto</h1>
             <div className={styles.secondDiv}>
-                <div className={styles.icon}>
-                    <img src={animatedIcon} alt="" />
-                </div>
                 <div className={styles.ourMedia}>
                     <h2>Nuestros medios</h2>
                     <div className={styles.mediaContainer}>
                         <ul className={styles.list}>
-                            <li><span className={styles.listTitle}>Correo:</span> example@gmail.com</li>
-                            <li><span className={styles.listTitle}>Teléfono:</span> (809)-000-0000</li>
+                            <li className={styles.liNumber}><span className={styles.listTitle}>Teléfono:</span>
+                                <a href="https://wa.me/+18296490757" target='_blank' 
+                                className={styles.phone}>(829) 649-0757</a>
+                            </li>
                             <li>
                                 <span className={styles.listTitle}>Redes Sociales:</span>
                                 <ul className={styles.socialMedia}>
-                                    <li>
-                                        <a href="https://instagram.com/manaclabaseballacademy" target='_blank'><i className={`fa-brands fa-instagram ${styles.instagram}`} /> @manaclabaseballacademy</a>
+                                    <li >
+                                        <a className={styles.instagramLink} href="https://instagram.com/manaclabaseballacademy" target='_blank'><i className={`fa-brands fa-instagram ${styles.instagram}`} /> @manaclabaseballacademy</a>
                                     </li>
                                 </ul>
                             </li>
@@ -34,9 +32,6 @@ const Contact = () => {
                         <textarea placeholder='Escribe tu mensaje aqui!' onChange={(e) => setMessage(e.target.value)} />
                     </form>
                     <div className={styles.buttonsContainer}>
-                        <a className={styles.gmailButton} target='_blank'
-                            href={`mailto:emmanuel28.05.2006@gmail.com?subject=Baseball%20Academy&body=${message}`}>
-                            <img src='https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg' />Gmail</a>
                         <a className={styles.wsButton} target='_blank' href={`https://wa.me/+18098648668?text=${message}`}>
                             <i className='fa-brands fa-whatsapp' />
                             Whatsapp</a>

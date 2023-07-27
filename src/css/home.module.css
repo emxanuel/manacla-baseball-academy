@@ -16,13 +16,8 @@
 
 .header h1{
     font-size: 3vw;
-    font-weight: 300;
-    padding: 1vh;
-}
-
-.name{
-    font-size: 3vw;
     font-weight: 800;
+    padding: 1vh;
 }
 
 .header h2{
@@ -36,8 +31,7 @@
     background-repeat: no-repeat;
     display: grid;
     place-items: center;
-    border: 50px solid rgb(0, 0, 0);
-    width: calc(100% - 100px);
+    width: 100%;
     aspect-ratio: 16/9;
     position: relative;
     z-index: -20;

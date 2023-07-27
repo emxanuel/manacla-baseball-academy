@@ -10,8 +10,8 @@ const Footer = () => {
                 <JackInTheBox triggerOnce ><h3>Contáctanos</h3></JackInTheBox>
                 <Fade triggerOnce >
                     <div className={styles.content}>
-                        <a href=""><i className={`fa-brands fa-whatsapp ${styles.whatsapp}`} />
-                            (809)-000-0000</a>
+                        <a href="https://wa.me/+18296490757"><i className={`fa-brands fa-whatsapp ${styles.whatsapp}`} />
+                            (829) 649-0757</a>
                         <a href="https://instagram.com/manaclabaseballacademy" target='_blank'><i className={`fa-brands fa-instagram ${styles.instagram}`} />
                             @manaclabaseballacademy</a>
                     </div>
@@ -21,7 +21,7 @@ const Footer = () => {
                 <JackInTheBox triggerOnce ><h3>Ubicación</h3></JackInTheBox>
                 <Fade triggerOnce>
                     <div className={styles.content}>
-                        <a href=""><i className={`fa-solid fa-location-dot ${styles.pin}`} />Calle, Ciudad, Pais</a>
+                        <p><i className={`fa-solid fa-location-dot ${styles.pin}`} />Santo Domingo, República Dominicana</p>
                     </div>
                 </Fade>
             </div>
@@ -37,9 +37,6 @@ const Footer = () => {
                         </ul>
                     </div>
                 </Fade>
-            </div>
-            <div className={styles.credit}>
-                <a target='_blank' href="https://lordicon.com">Animated icons by Lordicon.com</a>
             </div>
         </footer>
     )

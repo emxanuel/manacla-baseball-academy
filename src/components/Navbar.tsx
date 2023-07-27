@@ -1,19 +1,19 @@
 import styles from '../css/navbar.module.css';
+import logo from '../assets/images/logo.png'
 import ElegibleMenu from './ElegibleMenu';
 import { scrollZero, toggleShowElement } from '../functions/elements';
 import elegibleMenuStyles from '../css/elegibleMenu.module.css'
 import navbarMenuStyles from '../css/navbarMenu.module.css'
 import { Link } from 'react-router-dom';
 import NavbarMenu from './NavbarMenu';
-import logo from '../assets/images/logo.png'
 
 const Navbar = () => {
     return (
         <div>
             <nav className={styles.container} id='navbar'>
                 <div className={styles.logo}>
-                    <img className={styles.icon} src={logo} />
-                    <h1 className={styles.name}>MANACLA Baseball</h1>
+                    <img className={styles.icon} src={logo} alt=''/>
+                    <h1 className={styles.name}>MANACLA BASEBALL ACADEMY</h1>
                 </div>
                 <div className={styles.links}>
                     <Link to='/' onClick={scrollZero}>Inicio</Link>

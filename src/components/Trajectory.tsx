@@ -1,18 +1,14 @@
 import styles from '../css/trajectory.module.css'
+import image from '../assets/images/TRAYECTORIA.png'
 
 const Trajectory = () => {
     return (
         <div className={styles.container}>
-            <h1>Trayectoria</h1>
             <div className={styles.secondDiv}>
                 <div className={styles.imgContainer}>
-                    <img src="" alt="Imagen de trayectoria" />
-                </div>
-                <div className={styles.information}>
-                    <p>Informacion</p>
+                    <img src={image} alt="Imagen de trayectoria" />
                 </div>
             </div>
-            <div className={styles.decoration}></div>
         </div>
     )
 }
