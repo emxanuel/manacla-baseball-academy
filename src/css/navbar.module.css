@@ -59,6 +59,9 @@
 
 .links a{
     text-decoration: none;
+}
+
+.link{
     width: max-content;
 }
 
