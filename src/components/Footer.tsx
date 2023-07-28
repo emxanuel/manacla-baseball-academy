@@ -3,6 +3,9 @@ import styles from '../css/footer.module.css'
 import { scrollZero, selectedPage } from '../functions/elements'
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import { faWhatsapp, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 const Footer = () => {
     useEffect(selectedPage)
@@ -12,9 +15,11 @@ const Footer = () => {
                 <JackInTheBox triggerOnce ><h3>Contáctanos</h3></JackInTheBox>
                 <Fade triggerOnce >
                     <div className={styles.content}>
-                        <a href="https://wa.me/+18296490757"><i className={`fa-brands fa-whatsapp ${styles.whatsapp}`} />
+                        <a href="https://wa.me/+18296490757">
+                            <FontAwesomeIcon icon={faWhatsapp} className={styles.icons}/>
                             (829) 649-0757</a>
-                        <a href="https://instagram.com/manaclabaseballacademy" target='_blank'><i className={`fa-brands fa-instagram ${styles.instagram}`} />
+                        <a href="https://instagram.com/manaclabaseballacademy" target='_blank'>
+                            <FontAwesomeIcon icon={faInstagram} className={styles.icons}/>
                             @manaclabaseballacademy</a>
                     </div>
                 </Fade>
@@ -23,7 +28,7 @@ const Footer = () => {
                 <JackInTheBox triggerOnce ><h3>Ubicación</h3></JackInTheBox>
                 <Fade triggerOnce>
                     <div className={styles.content}>
-                        <p><i className={`fa-solid fa-location-dot ${styles.pin}`} />Santo Domingo, República Dominicana</p>
+                        <p><FontAwesomeIcon icon={faLocationDot} className={styles.icons}/>Santo Domingo, República Dominicana</p>
                     </div>
                 </Fade>
             </div>

@@ -10,7 +10,7 @@
     animation: init;
     animation-duration: 300ms;
     animation-fill-mode: forwards;
-    margin-left: 62.4vw;
+    right: 0;
     padding: 1vw;
 }
 

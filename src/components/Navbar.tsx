@@ -6,6 +6,8 @@ import elegibleMenuStyles from '../css/elegibleMenu.module.css'
 import navbarMenuStyles from '../css/navbarMenu.module.css'
 import { Link } from 'react-router-dom';
 import NavbarMenu from './NavbarMenu';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 const Navbar = () => {
     return (
@@ -34,7 +36,7 @@ const Navbar = () => {
                     <button className={styles.icon} onClick={() => {
                         const menu = document.getElementsByClassName(navbarMenuStyles.container) as HTMLCollectionOf<HTMLElement>
                         toggleShowElement(menu[0], navbarMenuStyles)
-                    }}><i className='fa-solid fa-bars' /></button>
+                    }}><FontAwesomeIcon className='bar' icon={faBars}/></button>
                 </div>
             </nav>
             <NavbarMenu />
