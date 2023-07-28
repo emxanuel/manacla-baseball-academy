@@ -1,5 +1,5 @@
 import styles from '../css/trajectory.module.css'
-import image from '../assets/images/TRAYECTORIA.svg'
+import image from '../assets/images/TRAYECTORIA-min.svg'
 
 const Trajectory = () => {
     return (

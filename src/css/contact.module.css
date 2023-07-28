@@ -11,38 +11,17 @@
     margin-bottom: 2rem;
 }
 
-.formContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: min-content;
-    gap: 2rem;
-}
-
-.formContainer h2{
-    text-align: center;
-}
-
 .container a{
     text-decoration: none;
     border-radius: 0.2rem;
     color: white;
     padding: 1rem;
     width: 8rem;
-    height: 0.4rem;
     display: flex;
     justify-content: center;
     align-items: center;
     display: flex;
     gap: 0.5rem;
-}
-
-.gmailButton{
-    background-color: #fa6868;
-}
-
-.gmailButton img{
-    width: 1.4rem;
 }
 
 .wsButton{
@@ -53,88 +32,11 @@
     font-size: 1.4rem;
 }
 
-.container textarea{
-    resize: none;
-    width: 19.5rem;
-    aspect-ratio: 16/9;
-    font-size: medium;
-    padding: 0.5rem;
-}
-
-.buttonsContainer{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
 .secondDiv{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 5rem;
-}
-
-.icon{
-    position: fixed;
-    z-index: -10;
-    opacity: 0.05;
-}
-
-.icon img{
-    width: 25rem;
-    opacity: 0.7;
-}
-
-.ourMedia{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-}
-
-.ourMedia a{
-    color: black;
-    width: 100%;
-}
-
-.list{
-    font-size: large;
-    list-style: none;
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    width: max-content;
-}
-
-.socialMedia a{
-    color: black;
-    width: fit-content;
-}
-
-.socialMedia li{
-    list-style: none;
-}
-
-.listTitle{
-    font-weight: 700;
-}
-
-.instagram{
-    color: #2c66b1;
-    font-weight: 700;
-    font-size: larger;
-}
-
-.liNumber{
-    display: flex;
-    align-items: center;
-}
-
-.mediaContainer{
-    width: 100%;
 }
 
 

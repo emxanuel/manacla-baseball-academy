@@ -1,6 +1,6 @@
 import { Fade, JackInTheBox } from 'react-awesome-reveal'
 import styles from '../css/footer.module.css'
-import { selectedPage } from '../functions/elements'
+import { scrollZero, selectedPage } from '../functions/elements'
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
@@ -31,7 +31,7 @@ const Footer = () => {
                 <JackInTheBox triggerOnce ><h3>Acceso Rápido</h3></JackInTheBox>
                 <Fade triggerOnce >
                     <div className={styles.content}>
-                        <ul>
+                        <ul onClick={scrollZero}>
                             <li><Link to="/">Inicio</Link></li>
                             <li><Link to="/about">Quienes Somos</Link></li>
                             <li><Link to="/trajectory">Trayectoria</Link></li>
