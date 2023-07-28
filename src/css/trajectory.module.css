@@ -23,9 +23,3 @@
 .imgContainer img{
     width: 100%;
 }
-
-@media (max-width: 600px) {
-    .imgContainer img{
-        scale: 1.5;
-    }
-}
