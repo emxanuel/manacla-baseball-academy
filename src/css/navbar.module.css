@@ -59,6 +59,7 @@
 
 .links a{
     text-decoration: none;
+    width: max-content;
 }
 
 .links p, .links a{
