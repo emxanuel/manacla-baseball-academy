@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './components/Home'
 import './css/general.css'
@@ -11,7 +11,7 @@ import Players from './components/Players'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<React.StrictMode>
-		<BrowserRouter>
+		<HashRouter>
 			<Routes>
 				<Route path='/' Component={() => <Layout Comp={Home} />} />
 				<Route path='/trajectory' Component={() => <Layout Comp={Trajectory} />} />
@@ -19,6 +19,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 				<Route path='/about' Component={() => <Layout Comp={About} />} />
 				<Route path='/players/:year' Component={() => <Layout Comp={Players}/>} />
 			</Routes>
-		</BrowserRouter>
+		</HashRouter>
 	</React.StrictMode>,
 )
