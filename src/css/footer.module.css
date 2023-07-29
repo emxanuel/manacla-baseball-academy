@@ -72,19 +72,6 @@
 
 @media (max-width: 801px) {
     .container{
-        height: 50vh;
-        flex-direction: column;
-        gap: 0px;
-    }
-    .content{
-        justify-content: center;
-        align-items: center;
-        font-size: large;
-    }
-}
-
-@media (max-width: 600px) {
-    .container{
         height: 80vh;
         flex-direction: column;
         gap: 0px;

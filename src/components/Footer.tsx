@@ -1,14 +1,12 @@
 import { Fade, JackInTheBox } from 'react-awesome-reveal'
 import styles from '../css/footer.module.css'
 import { scrollZero, selectedPage } from '../functions/elements'
-import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { faWhatsapp, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 const Footer = () => {
-    useEffect(selectedPage)
     return (
         <footer className={styles.container}>
             <div className={styles.contact}>

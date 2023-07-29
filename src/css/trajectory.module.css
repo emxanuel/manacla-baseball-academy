@@ -3,17 +3,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
+    overflow: hidden;
 }
 
 .secondDiv{
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .imgContainer{
     width: 100%;
-    aspect-ratio: 16/9;
+    aspect-ratio: 2/1;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -22,4 +25,10 @@
 
 .imgContainer img{
     width: 100%;
+}
+
+@media (max-width: 800px) {
+    .imgContainer img{
+        scale: 1.5;
+    }
 }

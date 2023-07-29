@@ -1,0 +1,23 @@
+.container{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100vh;
+}
+
+.imageContainer{
+    width: 60%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid black;
+    aspect-ratio: 2/1;
+}
+
+.container p{
+    font-size: large;
+}

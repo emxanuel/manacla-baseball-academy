@@ -110,7 +110,7 @@
     display: none;
 }
 
-@media (max-width: 801px) {
+@media (max-width: 1000px) {
     .links{
         display: none;
     }
