@@ -1,6 +1,6 @@
 import { Fade, JackInTheBox } from 'react-awesome-reveal'
 import styles from '../css/footer.module.css'
-import { scrollZero, selectedPage } from '../functions/elements'
+import { scrollZero } from '../functions/elements'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'

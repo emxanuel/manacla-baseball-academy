@@ -21,3 +21,13 @@
 .container p{
     font-size: large;
 }
+
+@media (max-width: 801px) {
+    .container{
+        height: max-content;
+        padding-bottom: 10rem;
+    }
+    .imageContainer{
+        width: 80%;
+    }
+}
