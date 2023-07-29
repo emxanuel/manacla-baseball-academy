@@ -18,16 +18,15 @@ const   toggleShowElement = (element: HTMLElement, styles: CSSModuleClasses) => 
     // }
 };
 
-const selectedPage = () => {
+const selectedPage = (page: string) => {
     const anchor = document.querySelector(
-        `li > a[href='${window.location.pathname}']`
+        `li > a[href='#/${page}']`
     ) as HTMLElement;
-    if (anchor === null) {
-        setTimeout(() => {
-            selectedPage();
-        }, 500);
-    } else {
+
+    if (anchor !== null) {
+        console.log(anchor)
         anchor.style.fontWeight = "800";
+        
     }
 };
 
@@ -59,7 +58,5 @@ const ocultNavbarMenu = () => {
 }
 
 window.onscroll = makeSticky;
-
-window.addEventListener("load", () => selectedPage());
 
 export { toggleShowElement, selectedPage, scrollZero, hide, ocultNavbarMenu };

@@ -1,9 +1,14 @@
 import styles from '../css/home.module.css';
 import mainImage from '../assets/images/main-image.jpg'
 import homePage3 from '../assets/images/PORTADA-min.svg'
+import { selectedPage } from '../functions/elements';
+import { useEffect } from 'react';
 // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-var-requires, @typescript-eslint/no-unsafe-call
 
 const Home = () => {
+    useEffect(() => {
+        selectedPage('')
+    }, [])
     return (
         <div className={styles.container}>
             <section className={styles.mainMedia}>

@@ -1,6 +1,11 @@
 import styles from '../css/about.module.css'
+import { selectedPage } from '../functions/elements'
+import { useEffect } from 'react'
 
 const About = () => {
+    useEffect(() => {
+        selectedPage('about')
+    }, [])
     return (
         <div className={styles.container}>
             <div className={styles.media}>

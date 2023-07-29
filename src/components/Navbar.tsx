@@ -19,7 +19,7 @@ const Navbar = () => {
                 </div>
                 <div className={styles.links}>
                     <Link className={styles.link} to='/' onClick={scrollZero}>Inicio</Link>
-                    <Link className={styles.link} to='/about' onClick={scrollZero}>Quienes Somos</Link>
+                    <Link className={styles.link} to='/about' onClick={scrollZero}>Nosotros</Link>
                     <div className={styles.menu}>
                         <p onClick={() => {
                             const menu = document.getElementsByClassName(elegibleMenuStyles.container) as HTMLCollectionOf<HTMLElement>;
@@ -30,6 +30,7 @@ const Navbar = () => {
                         <ElegibleMenu />
                     </div>
                     <Link className={styles.link} to='/trajectory' onClick={scrollZero}>Trayectoria</Link>
+                    <Link className={styles.link} to='/activities' onClick={scrollZero}>Actividades</Link>
                     <Link className={styles.link} to='/contact' onClick={scrollZero}>Contacto</Link>
                 </div>
                 <div className={styles.menuButton}>

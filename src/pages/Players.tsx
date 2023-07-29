@@ -1,6 +1,6 @@
 import players, { player } from "../data/players"
 import { useParams } from "react-router-dom"
-import PlayerCard from "./PlayerCard"
+import PlayerCard from "../components/PlayerCard"
 import styles from '../css/players.module.css'
 
 const Players = () => {
