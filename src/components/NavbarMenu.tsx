@@ -15,9 +15,10 @@ const NavbarMenu = () => {
         <div>
             <div className={`${styles.notShow} ${styles.hidden} ${styles.container} hideOnScroll`} id={styles.container}>
                 <Link className={styles.links} to='/' onClick={scrollZero}>Inicio</Link>
-                <Link className={styles.links} to='/about' onClick={scrollZero}>Quienes Somos</Link>
+                <Link className={styles.links} to='/about' onClick={scrollZero}>Nosotros</Link>
                 <button onClick={toggle}><p className={styles.links}>Elegibles</p></button>
                 <Link className={styles.links} to='/trajectory' onClick={scrollZero}>Trayectoria</Link>
+                <Link className={styles.links} to='/activities' onClick={scrollZero}>Actividades</Link>
                 <Link className={styles.links} to='/contact' onClick={scrollZero}>Contacto</Link>
             </div>
             <ElegibleModal />

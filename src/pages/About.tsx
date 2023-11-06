@@ -1,6 +1,7 @@
 import styles from '../css/about.module.css'
 import { selectedPage } from '../functions/elements'
 import { useEffect } from 'react'
+import Members from '../components/Members'
 
 const About = () => {
     useEffect(() => {
@@ -18,6 +19,8 @@ const About = () => {
                 convertirse en en este campo deportivo e impulsarlo a convertirse en jugadores profesionales.
                 </p>
             </div>
+            
+            <Members />
         </div>
     )
 }
